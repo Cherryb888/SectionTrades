@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SectionTrades — wiki</title>
+<style>
+  :root {
+    --bg: #0e1116;
+    --panel: #161b22;
+    --panel2: #1f262e;
+    --line: #2a313a;
+    --text: #d7dde5;
+    --muted: #8a95a3;
+    --accent: #6ee7b7;
+    --warn: #f5a524;
+    --bad: #f87171;
+    --link: #7dd3fc;
+  }
+  * { box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); margin: 0; font: 14px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; }
+  a { color: var(--link); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header { padding: 20px 24px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 8px; }
+  header h1 { font-size: 18px; margin: 0; letter-spacing: 0.02em; }
+  header .sub { color: var(--muted); font-size: 12px; }
+  nav { padding: 10px 24px; border-bottom: 1px solid var(--line); background: var(--panel); }
+  nav a { margin-right: 18px; font-size: 13px; }
+  main { max-width: 1100px; margin: 0 auto; padding: 24px; }
+  section { margin-bottom: 40px; }
+  section h2 { font-size: 15px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--accent); border-bottom: 1px solid var(--line); padding-bottom: 6px; margin: 0 0 14px; }
+  section h3 { font-size: 14px; color: var(--text); margin: 18px 0 8px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+  .card h3 { margin-top: 0; }
+  .card .ticker { font-size: 12px; color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; }
+  ul { margin: 6px 0 0; padding-left: 18px; }
+  li { margin-bottom: 4px; }
+  .kv { display: grid; grid-template-columns: max-content 1fr; column-gap: 14px; row-gap: 4px; font-size: 13px; }
+  .kv dt { color: var(--muted); }
+  .kv dd { margin: 0; }
+  .tag { display: inline-block; background: var(--panel2); color: var(--muted); padding: 1px 8px; border-radius: 10px; font-size: 11px; margin-right: 4px; }
+  .tag.ok { color: var(--accent); }
+  .tag.warn { color: var(--warn); }
+  .tag.bad { color: var(--bad); }
+  .note { background: var(--panel2); border-left: 3px solid var(--warn); padding: 10px 14px; font-size: 13px; color: var(--muted); border-radius: 0 4px 4px 0; margin-top: 10px; }
+  .note strong { color: var(--text); }
+  code { background: var(--panel2); padding: 1px 6px; border-radius: 3px; font-size: 12px; }
+  footer { color: var(--muted); font-size: 12px; text-align: center; padding: 24px; border-top: 1px solid var(--line); }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+  th { color: var(--muted); font-weight: 500; font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>SectionTrades — project wiki</h1>
+    <div class="sub">£100 account · Trading212 · TSLA / NVDA / BTC · first-20-trades sprint</div>
+  </div>
+  <div class="sub">Last updated: 2026-04-23</div>
+</header>
+
+<nav>
+  <a href="#instruments">Instruments</a>
+  <a href="#smartmoney">Smart money &amp; flows</a>
+  <a href="#calendar">Macro calendar</a>
+  <a href="#rules">Rules &amp; skills</a>
+  <a href="#journal">Journal</a>
+  <a href="#sessionchecklist">Session checklist</a>
+</nav>
+
+<main>
+
+<section id="instruments">
+  <h2>Instruments</h2>
+  <div class="grid">
+
+    <div class="card">
+      <div class="ticker">BTC-USD · spot, 24/7</div>
+      <h3>Bitcoin</h3>
+      <dl class="kv">
+        <dt>Price (22 Apr)</dt><dd>~$78,010</dd>
+        <dt>ATH</dt><dd>$122,436 (late 2025)</dd>
+        <dt>Recent low</dt><dd>~$60,000 (early 2026)</dd>
+        <dt>From ATH</dt><dd>−36%</dd>
+        <dt>Off low</dt><dd>+30%</dd>
+        <dt>Read</dt><dd><span class="tag warn">bounce only</span> corrective rally into supply</dd>
+      </dl>
+      <h3>Key levels to mark each session</h3>
+      <ul>
+        <li><strong>$60–62k</strong> — structural low, major invalidation</li>
+        <li><strong>$74k</strong> — short-term trend invalidation (daily close)</li>
+        <li><strong>$78k</strong> — current 4-week breakout zone</li>
+        <li><strong>$85–90k</strong> — pre-drop consolidation, next overhead supply</li>
+      </ul>
+      <h3>Live data</h3>
+      <ul>
+        <li><a href="https://finance.yahoo.com/quote/BTC-USD/">Yahoo — BTC-USD</a> (chart, history)</li>
+        <li><a href="https://www.tradingview.com/symbols/BTCUSD/">TradingView — BTCUSD</a></li>
+        <li><a href="https://www.coinglass.com/BitcoinOpenInterest">CoinGlass — OI / liquidations</a></li>
+        <li><a href="https://www.coinglass.com/FundingRate/BTC">CoinGlass — BTC funding</a></li>
+        <li><a href="https://farside.co.uk/btc/">Farside — spot ETF flows</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="ticker">TSLA · US equity · 14:30–21:00 UK</div>
+      <h3>Tesla</h3>
+      <dl class="kv">
+        <dt>Price</dt><dd>[fill at session open]</dd>
+        <dt>52w range</dt><dd>[fill]</dd>
+        <dt>Earnings</dt><dd>[fill — quarterly]</dd>
+        <dt>Read</dt><dd><span class="tag">needs brief before first trade</span></dd>
+      </dl>
+      <h3>Live data</h3>
+      <ul>
+        <li><a href="https://finance.yahoo.com/quote/TSLA/">Yahoo — TSLA</a></li>
+        <li><a href="https://www.tradingview.com/symbols/NASDAQ-TSLA/">TradingView — TSLA</a></li>
+        <li><a href="https://finance.yahoo.com/calendar/earnings?symbol=TSLA">Yahoo — TSLA earnings</a></li>
+        <li><a href="https://www.nasdaq.com/market-activity/stocks/tsla/short-interest">Nasdaq — TSLA short interest</a></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="ticker">NVDA · US equity · 14:30–21:00 UK</div>
+      <h3>Nvidia</h3>
+      <dl class="kv">
+        <dt>Price</dt><dd>[fill at session open]</dd>
+        <dt>52w range</dt><dd>[fill]</dd>
+        <dt>Earnings</dt><dd>[fill — quarterly]</dd>
+        <dt>Read</dt><dd><span class="tag">needs brief before first trade</span></dd>
+      </dl>
+      <h3>Live data</h3>
+      <ul>
+        <li><a href="https://finance.yahoo.com/quote/NVDA/">Yahoo — NVDA</a></li>
+        <li><a href="https://www.tradingview.com/symbols/NASDAQ-NVDA/">TradingView — NVDA</a></li>
+        <li><a href="https://finance.yahoo.com/calendar/earnings?symbol=NVDA">Yahoo — NVDA earnings</a></li>
+        <li><a href="https://www.nasdaq.com/market-activity/stocks/nvda/short-interest">Nasdaq — NVDA short interest</a></li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+<section id="smartmoney">
+  <h2>Smart money &amp; flows</h2>
+  <div class="note">
+    <strong>Read this before using any of these as a signal.</strong>
+    Following one whale loses money — you're always late, you don't see their hedges,
+    and survivorship bias flatters the ones you've heard of. These sources are useful
+    for <em>aggregate positioning</em> (are large holders net adding or distributing?),
+    <em>flow changes</em> (is the direction shifting?), and <em>labeled on-chain moves</em>
+    (exchange deposits ≈ likely selling). Treat them as macro inputs with a days-to-weeks
+    lag. Do not size a scalp off a whale tweet.
+  </div>
+
+  <h3>Crypto on-chain &amp; exchange positioning</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>Lookonchain</h3>
+      <p>Free on-chain whale tracking with entity labels. Regularly flags smart-money wallets and large exchange deposits/withdrawals. Report-style posts, not hype.</p>
+      <ul>
+        <li><a href="https://www.lookonchain.com/">lookonchain.com</a></li>
+        <li><a href="https://x.com/lookonchain">X: @lookonchain</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Arkham Intelligence</h3>
+      <p>Entity-labeled on-chain. See where named funds, exchanges, treasuries, whales are moving assets. Free tier is usable.</p>
+      <ul>
+        <li><a href="https://www.arkhamintelligence.com/">arkhamintelligence.com</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>CoinGlass</h3>
+      <p>Aggregate derivatives: long/short ratios across exchanges, open interest, liquidation heatmaps, funding rates. Best single source for "is the market crowded one way."</p>
+      <ul>
+        <li><a href="https://www.coinglass.com/LongShortRatio">Long/short ratios</a></li>
+        <li><a href="https://www.coinglass.com/LiquidationData">Liquidation heatmap</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Glassnode</h3>
+      <p>On-chain analytics — holder cohort behavior, realized price, MVRV. Free tier limited but still useful. Paid for depth.</p>
+      <ul>
+        <li><a href="https://studio.glassnode.com/">studio.glassnode.com</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Whale Alert</h3>
+      <p>Real-time feed of large transactions. Noisier than Lookonchain — most alerts are internal exchange shuffles, not signal. Use with scepticism.</p>
+      <ul>
+        <li><a href="https://whale-alert.io/">whale-alert.io</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Farside / SoSoValue — ETF flows</h3>
+      <p>Daily net flows into spot BTC ETFs (IBIT, FBTC, etc.). The single most tradeable institutional-flow number for BTC.</p>
+      <ul>
+        <li><a href="https://farside.co.uk/btc/">Farside — BTC ETF flows</a></li>
+        <li><a href="https://sosovalue.com/assets/etf/us-btc-spot">SoSoValue — spot BTC ETFs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <h3>Equity "smart money" — TSLA / NVDA</h3>
+  <div class="grid">
+    <div class="card">
+      <h3>13F aggregators</h3>
+      <p>Quarterly filings from institutions &gt;$100M AUM. <strong>Published ~45 days after quarter end</strong> — macro input, not a trade signal. Useful for "is smart money accumulating or trimming over quarters."</p>
+      <ul>
+        <li><a href="https://whalewisdom.com/stock/tsla">WhaleWisdom — TSLA holders</a></li>
+        <li><a href="https://whalewisdom.com/stock/nvda">WhaleWisdom — NVDA holders</a></li>
+        <li><a href="https://www.dataroma.com/">Dataroma — superinvestor portfolios</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Insider transactions</h3>
+      <p>Company insiders buying/selling. Insider selling is noisy (options vesting, diversification). Insider <em>buying</em> with own cash is a higher-quality signal.</p>
+      <ul>
+        <li><a href="http://openinsider.com/">OpenInsider</a></li>
+        <li><a href="https://finance.yahoo.com/quote/TSLA/insider-transactions/">Yahoo — TSLA insiders</a></li>
+        <li><a href="https://finance.yahoo.com/quote/NVDA/insider-transactions/">Yahoo — NVDA insiders</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Options flow &amp; positioning</h3>
+      <p>Large single-name options prints and put/call ratios. Unusual activity isn't edge by itself — use it to spot which strikes &amp; expiries smart money is expressing a view through.</p>
+      <ul>
+        <li><a href="https://unusualwhales.com/">Unusual Whales</a> (paid)</li>
+        <li><a href="https://www.marketchameleon.com/Overview/TSLA/">Market Chameleon — TSLA</a></li>
+        <li><a href="https://www.marketchameleon.com/Overview/NVDA/">Market Chameleon — NVDA</a></li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Short interest &amp; borrow</h3>
+      <ul>
+        <li><a href="https://fintel.io/ss/us/tsla">Fintel — TSLA short interest</a></li>
+        <li><a href="https://fintel.io/ss/us/nvda">Fintel — NVDA short interest</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="calendar">
+  <h2>Macro calendar</h2>
+  <p class="sub" style="color:var(--muted)">Scheduled events that move all three instruments. News-reaction setups only ever taken on these, never on unscheduled headlines.</p>
+  <table>
+    <thead><tr><th>Event</th><th>Source</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>FOMC meetings &amp; minutes</td><td><a href="https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm">federalreserve.gov</a></td><td>Fed day = no scalps 2:00–2:15 ET, review tone after</td></tr>
+      <tr><td>CPI / PPI / NFP</td><td><a href="https://www.bls.gov/schedule/news_release/">bls.gov</a></td><td>First 90s after print is no-trade zone</td></tr>
+      <tr><td>Earnings (TSLA, NVDA)</td><td><a href="https://finance.yahoo.com/calendar/earnings">Yahoo earnings calendar</a></td><td>No holds through earnings on this account size</td></tr>
+      <tr><td>Economic calendar (combined)</td><td><a href="https://www.forexfactory.com/calendar">ForexFactory</a> · <a href="https://www.investing.com/economic-calendar/">Investing.com</a></td><td>Filter by US, high-impact</td></tr>
+      <tr><td>BTC ETF daily flows</td><td><a href="https://farside.co.uk/btc/">Farside</a></td><td>Update ~4pm ET next-day</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="rules">
+  <h2>Rules &amp; skills</h2>
+  <p class="sub" style="color:var(--muted)">Links to the SKILL.md files in this repo. These are the process the trading runs through — any deviation is logged in the journal.</p>
+  <ul>
+    <li><a href="../.claude/skills/README.md">Skills overview</a></li>
+    <li><a href="../.claude/skills/macro-read/SKILL.md">macro-read</a> — geopolitics / macro with a falsifiability gate</li>
+    <li><a href="../.claude/skills/market-analysis/SKILL.md">market-analysis</a> — single-instrument brief</li>
+    <li><a href="../.claude/skills/trade-thesis/SKILL.md">trade-thesis</a> — view → testable trade</li>
+    <li><a href="../.claude/skills/risk-sizing/SKILL.md">risk-sizing</a> — per-trade %, concurrent, drawdown tripwires</li>
+    <li><a href="../.claude/skills/scalp-intraday/SKILL.md">scalp-intraday</a> — defined setups, session windows, post-cost R:R</li>
+    <li><a href="../.claude/skills/pre-trade-checklist/SKILL.md">pre-trade-checklist</a> — 60-second gate</li>
+    <li><a href="../.claude/skills/paper-journal/SKILL.md">paper-journal</a> — logging templates</li>
+    <li><a href="../.claude/skills/tilt-check/SKILL.md">tilt-check</a> — emotional-state circuit breaker</li>
+    <li><a href="../plan.md">Active plan (v1)</a></li>
+  </ul>
+
+  <h3>Quick-reference — numbers on £100</h3>
+  <table>
+    <thead><tr><th>Rule</th><th>Value</th></tr></thead>
+    <tbody>
+      <tr><td>Risk per trade</td><td>0.5% = £0.50</td></tr>
+      <tr><td>Max concurrent risk</td><td>1.0% = £1.00</td></tr>
+      <tr><td>Daily loss limit</td><td>1.5% = £1.50 → stop</td></tr>
+      <tr><td>Max trades per session</td><td>5</td></tr>
+      <tr><td>Max losers per session</td><td>2 (session ends)</td></tr>
+      <tr><td>Cooldown between trades</td><td>5 minutes</td></tr>
+      <tr><td>Min R:R (post-cost)</td><td>1.3 (preferred 2.0+)</td></tr>
+      <tr><td>Sessions per 12h window</td><td>1</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section id="journal">
+  <h2>Journal</h2>
+  <ul>
+    <li><a href="../journal/README.md">Methodology</a></li>
+    <li><a href="../journal/2026-04.md">April 2026</a></li>
+  </ul>
+  <p class="sub" style="color:var(--muted)">Review triggers: interim at 20 trades, meaningful stats at 30–50. No rule changes before n=30.</p>
+</section>
+
+<section id="sessionchecklist">
+  <h2>Session checklist (use this each sit-down)</h2>
+  <ol>
+    <li><strong>State check</strong> — slept 6h+, eaten, not tilted, no carry-over anger from last session. If any fail: close platform.</li>
+    <li><strong>Levels</strong> — mark prior-day high/low, session VWAP, key levels from the instrument card above.</li>
+    <li><strong>Catalyst scan</strong> — any scheduled events in this window? Avoid first 90s after prints.</li>
+    <li><strong>Setup hunt</strong> — only ORB / VWAP reclaim-reject / failed breakout / news reaction. Anything else = don't take.</li>
+    <li><strong>Pre-trade gate</strong> — entry, stop, target written; size = (£100 × 0.5%) / (entry − stop); stop order placed with position.</li>
+    <li><strong>Log at entry</strong> — journal entry created within 15 min of fill, with emotional state named honestly.</li>
+    <li><strong>Session kill rules</strong> — 2 losers → end. Daily loss −£1.50 → end. 5 trades → end.</li>
+    <li><strong>Session review</strong> — one paragraph in the journal at session close: setup quality, rule adherence, anything to flag.</li>
+  </ol>
+</section>
+
+</main>
+
+<footer>
+  This wiki is a project file in <code>wiki/index.html</code>. It does not persist state — it's a reference. Open in a browser, or run <code>python -m http.server</code> from the repo root.
+</footer>
+
+</body>
+</html>
